@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                checkout https://github.com/DevenderMusukula/devopscourse.git
+                checkout scm
                 sh 'ls *'
             }
         }
